@@ -1,7 +1,7 @@
 /* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type */
 import {test} from "tap"
 
-import startsWith from "./source"
+import thenCatchP from "./source"
 
 test(({equal, notEqual}) => {
   return thenCatchP((value) => equal(value, "a"))((value) => notEqual(value, "a"))(Promise.resolve("a"))
