@@ -5,7 +5,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> (any -> any) -> (any -> any) -> Promise<any> ->  Promise<any>
+> (any => any) => (any => any) => Promise<any> =>  Promise<any>
 
 A port of the `Promise.prototype.then()` function, but with the extra catch argument.
 
