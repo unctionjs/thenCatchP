@@ -64,9 +64,7 @@
     "browser.js",
     "browser.js.map"
   ],
-  "dependencies": {
-    "core-js": "3.0.1"
-  },
+  "dependencies": {},
   "module": "module.js",
   "browser": "browser.js"
 }
