@@ -60,7 +60,7 @@
     "instrument": false
   },
   "files": [
-    "index.js",
+    "index.ts",
     "main.js",
     "main.js.map",
     "browser.js",
@@ -69,5 +69,6 @@
   "dependencies": {
   },
   "module": "module.js",
-  "browser": "browser.js"
+  "browser": "browser.js",
+  "types": "types.d.ts"
 }

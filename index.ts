@@ -1,6 +1,8 @@
-export default function thenCatchP (resolution) {
-  return function thenCatchPResolution (rejection) {
-    return function thenCatchPResolutionRejection (promise) {
+import {MapperFunctionType} from "./types";
+
+export default function thenCatchP<A, B, C, D> (resolution: MapperFunctionType<A, B>) {
+  return function thenCatchPResolution (rejection: MapperFunctionType<C, B>) {
+    return function thenCatchPResolutionRejection (promise: Promise<A>): Promise<D | B> {
       return promise.then(resolution, rejection);
     };
   };
