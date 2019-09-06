@@ -1,5 +1,5 @@
 
-import thenCatchP from "./index.ts";
+import thenCatchP from "./index";
 
 test(() => {
   return thenCatchP((value) => expect(value).toBe("a"))((value) => expect(value).not.toBe("a"))(Promise.resolve("a"));
